@@ -25,6 +25,7 @@ pip install -r requirements.txt
 ## configure uwsgi with cgi plugin
 http://uwsgi-docs.readthedocs.org/en/latest/CGI.html
 
-curl http://uwsgi.it/install | bash -s cgi /home/webuser/uwsgi
-cd uwsgi_latest_from_installer/
-python uwsgiconfig.py --plugin plugins/cgi
+curl http://uwsgi.it/install | bash -s cgi /tmp/uwsgi
+uwsgi --build-plugin uwsgi_latest_from_installer/plugins/cgi
+mkdir -p /usr/local/lib/uWSGI-2.0.11.1/plugins
+cp uwsgi_latest_from_installer/cgi_plugin.so /usr/local/lib/uWSGI-2.0.11.1/plugins
