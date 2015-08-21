@@ -34,4 +34,10 @@ curl http://uwsgi.it/install | bash -s cgi /tmp/uwsgi
 uwsgi --build-plugin uwsgi_latest_from_installer/plugins/cgi
 mkdir -p /usr/local/lib/uWSGI-2.0.11.1/plugins
 cp /home/webuser/cgi_plugin.so /usr/local/lib/uWSGI-2.0.11.1/plugins
+ln -sf /home/webuser/fs-curl-directory/fs_curl.conf /etc/supervisor/conf.d/fs_curl.conf
+```
+
+Check url
+```shell
+curl -D- http://127.0.0.1:9011/directories.py -d 'user=pendolfNambaTaxi&domain=default'
 ```
