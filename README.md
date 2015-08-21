@@ -4,7 +4,7 @@ CGI script for Freeswitch mod_xml_curl directory binding from Mysql database.
 
 ## Requirements
 ```shell
-aptitude install python-pip python-dev build-essential libxml2-dev \
+aptitude install python-pip python-dev build-essential libxml2-dev freeswitch-mod-xml-curl \
 libxslt1-dev libmyodbc unixODBC unixODBC-dev supervisor
 ```
 
