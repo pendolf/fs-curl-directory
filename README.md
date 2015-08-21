@@ -27,8 +27,7 @@ mkvirtualenv freeswitch
 pip install -r requirements.txt
 ```
 
-Configure uwsgi with cgi plugin
-[http://uwsgi-docs.readthedocs.org/en/latest/CGI.html]
+[Configure uwsgi with cgi plugin](http://uwsgi-docs.readthedocs.org/en/latest/CGI.html)
 
 ```shell
 curl http://uwsgi.it/install | bash -s cgi /tmp/uwsgi
