@@ -33,5 +33,5 @@ pip install -r requirements.txt
 curl http://uwsgi.it/install | bash -s cgi /tmp/uwsgi
 uwsgi --build-plugin uwsgi_latest_from_installer/plugins/cgi
 mkdir -p /usr/local/lib/uWSGI-2.0.11.1/plugins
-cp uwsgi_latest_from_installer/cgi_plugin.so /usr/local/lib/uWSGI-2.0.11.1/plugins
+cp /home/webuser/cgi_plugin.so /usr/local/lib/uWSGI-2.0.11.1/plugins
 ```
